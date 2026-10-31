@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{db}/documents {
+    // Admin-Benutzer-ID (steht auf pages/admin.html, wenn man angemeldet ist)
+    function isAdmin() { return request.auth != null && request.auth.uid == 'BqjMsG66UdOSqmqJDpkVBt7FR8h2'; }
+    match /threads/{id} {
+      allow read: if request.auth != null && (resource.data.uid == request.auth.uid || isAdmin());
+      allow create: if request.auth != null
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.messages.size() == 1
+        && request.resource.data.messages[0].from == 'user'
+        && request.resource.data.messages[0].text.size() <= 2000;
+      allow update: if request.auth != null
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['messages','updatedAt'])
+        && request.resource.data.messages.size() == resource.data.messages.size() + 1
+        && (isAdmin() || (resource.data.uid == request.auth.uid
+            && request.resource.data.messages[request.resource.data.messages.size()-1].from == 'user'));
+      allow delete: if isAdmin();
+    }
+  }
+}

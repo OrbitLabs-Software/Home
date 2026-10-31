@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard – OrbitLabs</title>
+<meta name="description" content="Dein persönlicher Bereich bei OrbitLabs.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#060714">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OrbitLabs">
+<meta property="og:title" content="Dashboard – OrbitLabs">
+<meta property="og:description" content="Dein persönlicher Bereich bei OrbitLabs.">
+<meta property="og:image" content="https://DEINE-DOMAIN/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/tools.css">
+<link rel="stylesheet" href="../css/auth.css">
+<script src="../js/main.js" defer></script>
+</head>
+<body>
+<header class="nav"><div class="container">
+  <a class="logo" href="../index.html"><img src="../assets/favicon.svg" width="36" height="36" alt=""><span>OrbitLabs<small>Building the Future of Software</small></span></a>
+  <ul class="menu" id="menu"><li><a href="../index.html">Willkommen</a></li><li><a href="../pages/downloads.html">Downloads</a></li><li><a href="../pages/onlinetools.html">Onlinetools</a></li><li><a href="../pages/spiele.html">Spiele</a></li><li><a href="../pages/lizenz.html">Lizenz</a></li></ul>
+  <div class="tools"><a class="btn btn-primary btn-sm" id="auth-btn" href="../pages/login.html">Anmelden</a><button class="btn btn-ghost btn-sm" id="auth-out" hidden>Abmelden</button><button class="icon-btn" id="theme-toggle" aria-label="Design wechseln">◐</button><button class="icon-btn burger" id="burger" aria-label="Menü" aria-expanded="false">☰</button></div>
+</div></header>
+<main>
+<section class="section" style="padding-top:44px"><div class="container">
+<div id="gate" hidden><div class="panel center narrow"><h2 style="font-size:28px">Bitte anmelden</h2><p style="margin:12px 0 24px">Dein Dashboard ist dein persönlicher Bereich – kostenlos und nur für dich.</p><a class="btn btn-primary" href="login.html?next=pages%2Fdashboard.html">Anmelden</a></div></div>
+<div id="dash" hidden>
+<div class="dash-top"><div class="avatar" id="av"></div><div><div class="eyebrow" id="greet" style="margin-bottom:6px"></div><h1 id="uname" style="font-size:clamp(30px,4.5vw,48px)"></h1><p id="usub" style="margin-top:6px"></p></div></div>
+<div class="stats" id="stats"></div>
+<div class="dgrid"><div class="panel"><h3>Meine Programme</h3><ul class="prog" id="prog"></ul></div><div class="panel"><h3>Letzte Aktivität</h3><ul class="act" id="act"></ul></div></div>
+<div class="dgrid"><div class="panel"><h3>Spiel-Rekorde</h3><table class="rec"><tbody id="rec"></tbody></table><a class="btn btn-ghost btn-sm" href="spiele/pro-session.html" style="margin-top:18px">Pro Session spielen →</a></div><div class="panel"><h3>Schnellzugriff</h3><div class="quick" id="quick"></div></div></div>
+<div class="panel" id="mpanel" hidden><h3>Nachrichten</h3><ul class="act" id="mlist"><li>Lade …</li></ul><a class="btn btn-ghost btn-sm" href="nachrichten.html" style="margin-top:14px">Alle Nachrichten →</a> <a class="btn btn-ghost btn-sm" href="kontakt.html" style="margin-top:14px">Neue Nachricht</a></div>
+<div class="panel"><h3>Konto</h3><dl class="acc" id="acc"></dl><div class="row"><button class="btn btn-ghost btn-sm" id="pwreset" hidden>Passwort zurücksetzen</button><button class="btn btn-ghost btn-sm" id="wipe">Lokale Daten löschen</button><button class="btn btn-primary btn-sm" id="lout">Abmelden</button></div><p id="amsg" style="margin-top:14px;font-size:14px;color:var(--b)"></p></div>
+</div></div></section>
+</main>
+<footer class="footer"><div class="container">
+  <div class="cols">
+    <div><a class="logo" href="../index.html"><img src="../assets/favicon.svg" width="32" height="32" alt="">OrbitLabs</a><p style="margin-top:14px;max-width:320px;font-size:14.5px">Building the Future of Software – Programme, Onlinetools und Spiele aus einem Labor.</p></div>
+    <div><h4>Seiten</h4><ul><li><a href="../index.html">Willkommen</a></li><li><a href="../pages/downloads.html">Downloads</a></li><li><a href="../pages/onlinetools.html">Onlinetools</a></li><li><a href="../pages/spiele.html">Spiele</a></li><li><a href="../pages/lizenz.html">Lizenz</a></li></ul></div>
+    <div><h4>Info</h4><ul><li><a href="../pages/ueber-uns.html">Über uns</a></li><li><a href="../pages/news.html">News & Roadmap</a></li><li><a href="../pages/faq.html">FAQ</a></li><li><a href="../pages/kontakt.html">Kontakt</a></li><li><a href="../pages/impressum.html">Impressum</a></li><li><a href="../pages/datenschutz.html">Datenschutz</a></li></ul></div>
+    <div><h4>Projekte</h4><ul><li><a href="https://zospage.github.io/zOS/" target="_blank" rel="noopener">zOS</a></li><li><a href="https://brettsearch.github.io/search/brett-search-package/search.html" target="_blank" rel="noopener">Suchmaschine</a></li></ul></div>
+  </div>
+  <div class="bottom"><span>© 2026 OrbitLabs. Alle Rechte vorbehalten.</span><span><a href="mailto:OrbitLabs.Software@outlook.com">OrbitLabs.Software@outlook.com</a></span></div>
+</div></footer>
+<script src="../js/auth-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/dashboard.js"></script>
+<script src="../js/tools/common.js"></script><script src="../js/dash-msg.js"></script>
+</body>
+</html>

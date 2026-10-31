@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Willkommen – OrbitLabs</title>
+<meta name="description" content="OrbitLabs – Building the Future of Software. Programme, Onlinetools und Spiele.">
+<meta name="theme-color" content="#060714">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OrbitLabs">
+<meta property="og:title" content="Willkommen – OrbitLabs">
+<meta property="og:description" content="OrbitLabs – Building the Future of Software. Programme, Onlinetools und Spiele.">
+<meta property="og:image" content="https://DEINE-DOMAIN/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/tools.css">
+<link rel="stylesheet" href="css/auth.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="nav"><div class="container">
+  <a class="logo" href="index.html"><img src="assets/favicon.svg" width="36" height="36" alt=""><span>OrbitLabs<small>Building the Future of Software</small></span></a>
+  <ul class="menu" id="menu"><li><a href="index.html" class="active" aria-current="page">Willkommen</a></li><li><a href="pages/downloads.html">Downloads</a></li><li><a href="pages/onlinetools.html">Onlinetools</a></li><li><a href="pages/spiele.html">Spiele</a></li><li><a href="pages/lizenz.html">Lizenz</a></li></ul>
+  <div class="tools"><a class="btn btn-primary btn-sm" id="auth-btn" href="pages/login.html">Anmelden</a><button class="btn btn-ghost btn-sm" id="auth-out" hidden>Abmelden</button><button class="icon-btn" id="theme-toggle" aria-label="Design wechseln">◐</button><button class="icon-btn burger" id="burger" aria-label="Menü" aria-expanded="false">☰</button></div>
+</div></header>
+<main>
+
+<section class="hero"><div class="container">
+  <div class="reveal">
+    <span class="badge"><i></i>Neu: zOS ist da</span>
+    <h1>Willkommen bei <span class="grad">OrbitLabs</span></h1>
+    <p class="lead">Building the Future of Software. Wir haben die Webseite komplett neu gestaltet und das gesamte System neu geschrieben – schneller, klarer, schöner.</p>
+    <div class="actions"><a class="btn btn-primary" href="pages/downloads.html">Programme laden →</a><a class="btn btn-ghost" href="pages/onlinetools.html">Onlinetools ansehen</a></div>
+  </div>
+  <div class="orbit-art reveal" aria-hidden="true"><div class="ring"></div><div class="ring"></div><div class="ring"></div><div class="planet"></div></div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="center reveal" style="margin-bottom:44px"><div class="eyebrow">Highlights</div><h2>Das ist gerade neu</h2></div>
+  <div class="feature">
+    <article class="card reveal"><span class="tag">IN ENTWICKLUNG</span><div class="ico">⌬</div><h3>zOS</h3><p>zOS ist in der Entwicklung und bootet heute. Das Betriebssystem aus unserem Labor.</p><a class="btn btn-primary btn-sm" href="https://zospage.github.io/zOS/" target="_blank" rel="noopener">Mehr erfahren →</a></article>
+    <article class="card reveal"><span class="tag">NEU</span><div class="ico">⌕</div><h3>Neue Suchmaschine</h3><p>OrbitLabs hat jetzt eine eigene Suchmaschine. Probier sie direkt aus.</p><a class="btn btn-primary btn-sm" href="https://brettsearch.github.io/search/brett-search-package/search.html" target="_blank" rel="noopener">Jetzt testen →</a></article>
+  </div>
+</div></section>
+
+<section class="section"><div class="container split">
+  <div class="reveal"><div class="eyebrow">Aktuelle News</div><h2>Was gibt es Neues?</h2><p style="margin-top:14px">Die wichtigsten Neuigkeiten aus dem Labor auf einen Blick.</p></div>
+  <ul class="timeline reveal"><li>VideoBrett wurde eingestellt.</li><li>BrettApp kommt.</li><li>Brett Live Studio 5 ist da.</li><li>Alle Programme bekommen wieder neue Logos.</li><li>zOS ist da! Das Betriebssystem!</li></ul>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="center reveal" style="margin-bottom:40px"><div class="eyebrow">Entdecken</div><h2>Alles an einem Ort</h2></div>
+  <div class="grid">
+    <a class="card reveal" href="pages/downloads.html"><div class="ico">⇩</div><h3>Downloads</h3><p>Notizbrett, Browser, Musik und Zeichnen.</p></a>
+    <a class="card reveal" href="pages/onlinetools.html"><div class="ico">⚙</div><h3>Onlinetools</h3><p>Nützliche Tools direkt im Browser ausführen.</p></a>
+    <a class="card reveal" href="pages/spiele.html"><div class="ico">◈</div><h3>Spiele</h3><p>Rätselabenteuer und neue Spielmodi.</p></a>
+  </div>
+</div></section>
+
+<section class="section"><div class="container" style="max-width:720px">
+  <div class="rating reveal">
+    <div class="eyebrow">Feedback</div><h2>Bewerte das neue System</h2>
+    <p style="margin-top:10px">Tippe auf die Sterne – deine Bewertung wird sofort übernommen.</p>
+    <div class="stars" role="group" aria-label="Bewertung"><button aria-label="1 Stern">★</button><button aria-label="2 Sterne">★</button><button aria-label="3 Sterne">★</button><button aria-label="4 Sterne">★</button><button aria-label="5 Sterne">★</button></div>
+    <div id="rating-text">Bewertung: 0 Sterne</div><div id="rating-note" aria-live="polite"></div>
+  </div>
+</div></section>
+
+</main>
+<footer class="footer"><div class="container">
+  <div class="cols">
+    <div><a class="logo" href="index.html"><img src="assets/favicon.svg" width="32" height="32" alt="">OrbitLabs</a><p style="margin-top:14px;max-width:320px;font-size:14.5px">Building the Future of Software – Programme, Onlinetools und Spiele aus einem Labor.</p></div>
+    <div><h4>Seiten</h4><ul><li><a href="index.html">Willkommen</a></li><li><a href="pages/downloads.html">Downloads</a></li><li><a href="pages/onlinetools.html">Onlinetools</a></li><li><a href="pages/spiele.html">Spiele</a></li><li><a href="pages/lizenz.html">Lizenz</a></li></ul></div>
+    <div><h4>Info</h4><ul><li><a href="pages/ueber-uns.html">Über uns</a></li><li><a href="pages/news.html">News & Roadmap</a></li><li><a href="pages/faq.html">FAQ</a></li><li><a href="pages/kontakt.html">Kontakt</a></li><li><a href="pages/impressum.html">Impressum</a></li><li><a href="pages/datenschutz.html">Datenschutz</a></li></ul></div>
+    <div><h4>Projekte</h4><ul><li><a href="https://zospage.github.io/zOS/" target="_blank" rel="noopener">zOS</a></li><li><a href="https://brettsearch.github.io/search/brett-search-package/search.html" target="_blank" rel="noopener">Suchmaschine</a></li></ul></div>
+  </div>
+  <div class="bottom"><span>© 2026 OrbitLabs. Alle Rechte vorbehalten.</span><span><a href="mailto:OrbitLabs.Software@outlook.com">OrbitLabs.Software@outlook.com</a></span></div>
+</div></footer>
+<script src="js/auth-config.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>

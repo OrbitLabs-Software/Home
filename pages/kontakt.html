@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt – OrbitLabs</title>
+<meta name="description" content="Kontakt zu OrbitLabs.">
+<meta name="theme-color" content="#060714">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OrbitLabs">
+<meta property="og:title" content="Kontakt – OrbitLabs">
+<meta property="og:description" content="Kontakt zu OrbitLabs.">
+<meta property="og:image" content="https://DEINE-DOMAIN/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+
+<link rel="stylesheet" href="../css/variables.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/tools.css">
+<link rel="stylesheet" href="../css/auth.css">
+<script src="../js/main.js" defer></script>
+</head>
+<body>
+<header class="nav"><div class="container">
+  <a class="logo" href="../index.html"><img src="../assets/favicon.svg" width="36" height="36" alt=""><span>OrbitLabs<small>Building the Future of Software</small></span></a>
+  <ul class="menu" id="menu"><li><a href="../index.html">Willkommen</a></li><li><a href="../pages/downloads.html">Downloads</a></li><li><a href="../pages/onlinetools.html">Onlinetools</a></li><li><a href="../pages/spiele.html">Spiele</a></li><li><a href="../pages/lizenz.html">Lizenz</a></li></ul>
+  <div class="tools"><a class="btn btn-primary btn-sm" id="auth-btn" href="../pages/login.html">Anmelden</a><button class="btn btn-ghost btn-sm" id="auth-out" hidden>Abmelden</button><button class="icon-btn" id="theme-toggle" aria-label="Design wechseln">◐</button><button class="icon-btn burger" id="burger" aria-label="Menü" aria-expanded="false">☰</button></div>
+</div></header>
+<main>
+<section class="page-head"><div class="container reveal"><div class="eyebrow">Kontakt</div><h1>Schreib uns</h1><p class="lead">Fragen, Fehler oder Ideen? Wir freuen uns über jede Nachricht.</p></div></section><section class="section" style="padding-top:34px"><div class="container"><div class="split" style="grid-template-columns:.8fr 1.2fr"><div><div class="panel"><h3>Direkt per E-Mail</h3><p style="margin:10px 0 16px"><a href="mailto:OrbitLabs.Software@outlook.com" style="color:var(--b)">OrbitLabs.Software@outlook.com</a></p><p style="font-size:14px">Du möchtest einen Fehler melden? Nenne bitte das Programm oder Tool, dein System und was du zuletzt getan hast.</p></div></div>
+<div class="panel cform"><div class="panel center" id="cgate" hidden><h3>Bitte anmelden</h3><p style="margin:10px 0 18px">Melde dich kostenlos an, damit wir dir antworten können. Unsere Antwort erscheint in deinem Dashboard unter „Nachrichten“.</p><a class="btn btn-primary" href="login.html?next=pages/kontakt.html">Anmelden</a></div><form id="cform" novalidate>
+<div class="field"><label class="lbl" for="cart">Worum geht es?</label><select id="cart"><option>Frage</option><option>Fehler melden</option><option>Vorschlag</option><option>Sonstiges</option></select></div>
+<div class="field"><label class="lbl" for="cname">Name</label><input type="text" id="cname" autocomplete="name"></div>
+<div class="field"><label class="lbl" for="cmail">E-Mail</label><input type="text" id="cmail" inputmode="email" autocomplete="email"></div>
+<div class="field"><label class="lbl" for="ctext">Nachricht</label><textarea id="ctext" rows="6"></textarea></div>
+<label class="check" style="margin-bottom:14px;align-items:flex-start"><input type="checkbox" id="cpriv" style="margin-top:4px"><span>Ich habe die <a href="datenschutz.html" style="color:var(--b);text-decoration:underline">Datenschutzerklärung</a> gelesen.</span></label>
+<div class="msg" id="cmsg" aria-live="polite"></div><button class="btn btn-primary" type="submit">Nachricht senden</button></form></div></div></div></section>
+</main>
+<footer class="footer"><div class="container">
+  <div class="cols">
+    <div><a class="logo" href="../index.html"><img src="../assets/favicon.svg" width="32" height="32" alt="">OrbitLabs</a><p style="margin-top:14px;max-width:320px;font-size:14.5px">Building the Future of Software – Programme, Onlinetools und Spiele aus einem Labor.</p></div>
+    <div><h4>Seiten</h4><ul><li><a href="../index.html">Willkommen</a></li><li><a href="../pages/downloads.html">Downloads</a></li><li><a href="../pages/onlinetools.html">Onlinetools</a></li><li><a href="../pages/spiele.html">Spiele</a></li><li><a href="../pages/lizenz.html">Lizenz</a></li></ul></div>
+    <div><h4>Info</h4><ul><li><a href="../pages/ueber-uns.html">Über uns</a></li><li><a href="../pages/news.html">News & Roadmap</a></li><li><a href="../pages/faq.html">FAQ</a></li><li><a href="../pages/kontakt.html">Kontakt</a></li><li><a href="../pages/impressum.html">Impressum</a></li><li><a href="../pages/datenschutz.html">Datenschutz</a></li></ul></div>
+    <div><h4>Projekte</h4><ul><li><a href="https://zospage.github.io/zOS/" target="_blank" rel="noopener">zOS</a></li><li><a href="https://brettsearch.github.io/search/brett-search-package/search.html" target="_blank" rel="noopener">Suchmaschine</a></li></ul></div>
+  </div>
+  <div class="bottom"><span>© 2026 OrbitLabs. Alle Rechte vorbehalten.</span><span><a href="mailto:OrbitLabs.Software@outlook.com">OrbitLabs.Software@outlook.com</a></span></div>
+</div></footer>
+<div class="sent" id="sent" role="dialog" aria-modal="true" aria-labelledby="sent-t" hidden><div class="sent-box"><div class="sent-ic" aria-hidden="true">✓</div><h2 id="sent-t">Nachricht wurde gesendet</h2><p id="sent-p">Danke für deine Nachricht! Wir melden uns so schnell wie möglich bei dir.</p><button class="btn btn-primary" type="button" id="sent-ok">Schließen</button></div></div>
+<script src="../js/auth-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/tools/common.js"></script><script src="../js/site-config.js?v=5"></script><script src="../js/contact.js?v=8"></script>
+</body>
+</html>
